@@ -1,0 +1,14 @@
+<%- include('navbar') %>
+
+<h2>All Recipes</h2>
+
+<div class="recipe-list">
+  <% recipes.forEach(recipe => { %>
+    <div class="recipe-card">
+      <img src="/images/food1.jpg" alt="Food" />
+      <h3><%= recipe.title %></h3>
+      <p><%= recipe.ingredients %></p>
+      <a href="/recipes/<%= recipe._id %>">View Recipe</a>
+    </div>
+  <% }) %>
+</div>
