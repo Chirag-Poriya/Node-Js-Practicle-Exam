@@ -1,24 +1,3 @@
-// const express = require('express');
-
-// const app = express()
-
-// const port = 8081;
-
-// const cookieParser = require('cookie-parser');
-// app.use(cookieParser());
-// app.set('view engine', 'ejs');
-
-// app.use('/',(req,res)=>{
-
-// })
-
-// app.listen(port,(err)=>{
-//     if(!err){
-//         console.log("server start on http://localhost:"+port);
-//     }
-// })
-
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');

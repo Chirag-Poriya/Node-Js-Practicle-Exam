@@ -1,8 +1,7 @@
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcryptjs');
 const User = require('../models/userSchema');
 
-exports.register = async (req, res) => {
+module.exports.register = async (req, res) => {
   try {
     const { username, password, role } = req.body;
     const user = new User({ username, password, role });
@@ -13,7 +12,7 @@ exports.register = async (req, res) => {
   }
 };
 
-exports.login = async (req, res) => {
+module.exports.login = async (req, res) => {
   try {
     const { username, password } = req.body;
     const user = await User.findOne({ username });
